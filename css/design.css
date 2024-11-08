@@ -1,0 +1,30 @@
+*{
+    text-align: center
+}
+h1{
+    color:cadetblue;
+    font-size: 40px;
+}
+h2{
+    color:rgb(63, 164, 146); 
+    background: rgba(242, 255, 194, 0.265);
+}
+h3{
+    color:black; 
+    font-size: 20px ;
+    background: rgba(242, 255, 194, 0.265);
+}
+h4{
+    color:rgb(45, 150, 150) ;
+    font-family: 'Times New Roman', Times, serif;
+    background: rgba(242, 255, 194, 0.265);
+
+}
+p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+button{
+    color:white;
+    background-color: black;
+    border-radius: 10px;
+}
