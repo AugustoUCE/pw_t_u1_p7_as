@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            text-align: center;
+        }
+        #semaforo{
+            margin: 0 auto;
+        }
+
+        h1{
+            font-size: 90px;
+            font-family: Arial, Helvetica, sans-serif;
+            background: rgba(242, 255, 194, 0.265);
+        }
+        
+        .circulo {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin: 10px;
+            background-color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Simulador de sem&#225;foro</h1>
+    </header>
+    <nav>
+      
+    </nav>
+    <section>
+        <h2>Ayuda en veh&#237;culos y peatones</h2>
+        <p>
+            Es un dispositivo de control del tr&#225;fico 
+            que regula el flujo de veh&#237;culos y peatones 
+            en intersecciones o puntos cr&#237;ticos de una v&#237;a.
+        </p>
+        <div id="semaforo" class="circulo"></div>
+
+        <button onclick="document.getElementById('semaforo').style.backgroundColor='red'">Cambiar a Rojo</button>
+        <button onclick="document.getElementById('semaforo').style.backgroundColor='green'">Cambiar a Verde</button>
+        <button onclick="document.getElementById('semaforo').style.backgroundColor='yellow'">Cambiar a Amarillo</button>
+    </section>
+    <footer>
+    </footer>
+</body>
+
+</html>
