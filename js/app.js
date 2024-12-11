@@ -9,9 +9,18 @@ const app = Vue.createApp({
       } 
       
       this.formulario.push(newformulario);
-      
+
+      this.setear()
+     
+
       
     },
+    setear(){
+      this.nombre = null
+      this.apellido = null
+      this.hobby = null
+      this.lugar = null
+    }
     
   },
   data() {
@@ -19,8 +28,8 @@ const app = Vue.createApp({
       nombre: null,
       apellido:null,
       hobby:null,
-      lugar:null, // Campo para la nueva entrada
-      formulario: [] // Lista de entradas
+      lugar:null, 
+      formulario: [] 
     };
   }
 });
