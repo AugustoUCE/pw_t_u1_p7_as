@@ -1,18 +1,28 @@
-(function (ng) {
-    const { Component, NgModule } = ng.core;
-    const { BrowserModule } = ng.platformBrowser;
-    const { platformBrowserDynamic } = ng.platformBrowserDynamic;
-  
-    console.log('app.js cargado correctamente');
-  
-    const AppComponent = Component({
-      selector: 'app-root',
-        template: `<h1>Hola mundo: Angular!</h1>
-        `
-    }).Class({
-      constructor: function() {}
-    });
-  
- 
-  })(window.ng);
-  
+const app = Vue.createApp({
+  methods: {
+    agregar() {
+      const newformulario ={
+        nombre: this.nombre,
+        apellido: this.apellido,
+        hobby: this.hobby,  
+        lugar: this.lugar 
+      } 
+      
+      this.formulario.push(newformulario);
+      
+      
+    },
+    
+  },
+  data() {
+    return {
+      nombre: null,
+      apellido:null,
+      hobby:null,
+      lugar:null, // Campo para la nueva entrada
+      formulario: [] // Lista de entradas
+    };
+  }
+});
+
+app.mount('#myApp');
